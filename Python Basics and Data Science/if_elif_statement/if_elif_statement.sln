@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "if_elif_statement", "if_elif_statement.pyproj", "{0F1A207F-3E3E-4E79-8B50-DC133B180204}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F1A207F-3E3E-4E79-8B50-DC133B180204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1A207F-3E3E-4E79-8B50-DC133B180204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02133D73-55C1-45E6-B4E5-BAC8974BE6F2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "arithmetic_operations", "arithmetic_operations.pyproj", "{EF5D18C5-992F-4609-A9A2-7DF55AEB825B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF5D18C5-992F-4609-A9A2-7DF55AEB825B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF5D18C5-992F-4609-A9A2-7DF55AEB825B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8917230-60CF-48E0-9502-15F58033955A}
+	EndGlobalSection
+EndGlobal

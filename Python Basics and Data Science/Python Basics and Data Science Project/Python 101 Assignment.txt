@@ -1,0 +1,26 @@
+Credentials = {
+  "apikey": "QiF7YH430vHZVHAWbYRA6eCNVvrOxnhjFXeSNYxoP6HC",
+  "cos_hmac_keys": {
+    "access_key_id": "ae30eed5ab084e158e5370ec5f3e05e4",
+    "secret_access_key": "c63100f19e46b4fba4e9e691ceb899c0a4d7ea54b5b078d2"
+  },
+  "endpoints": "https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints",
+  "iam_apikey_description": "Auto-generated for key ae30eed5-ab08-4e15-8e53-70ec5f3e05e4",
+  "iam_apikey_name": "Service credentials-1",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/677cdf2aff9c41adbe3e54629c9a7911::serviceid:ServiceId-871e7958-96e3-444b-9d56-6196a0133e39",
+  "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/677cdf2aff9c41adbe3e54629c9a7911:5c0e5ab9-2c50-413b-92fa-208af6111568::"
+}
+
+bucket_name="lnfinity"
+
+import ibm_boto3
+resource = ibm_boto3.resource('s3', ibm_api_key_id=credentials['apikey'], ibm_service_instance_id=credentials['resource_instance_id'], ibm_auth_endpoint=auth_endpoint, config=Config(signature_version='oauth'),endpoint_url=service_endpoint)
+
+f=open(file=csv_path,mode='r')
+
+resource.Bucket(name=bucket_name ).put_object(Key=csv_name, Body=f.read())
+
+Params={'Bucket': bucket_name ,'Key': csv_name }
+
+https://dataplatform.cloud.ibm.com/analytics/notebooks/v2/dd14ef13-cadf-4d00-b31c-163b3c704839/view?access_token=ebdba60ea2eadb08271f69f9f818ae889e82e1e90da9a311dc3d570c1cd5e150
